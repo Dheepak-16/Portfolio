@@ -1,0 +1,32 @@
+.Button{
+    width: 100%;
+    min-height: 100vh;
+    background-color: aquamarine;
+    margin-top: 100px;
+}
+.col1{
+    background-color: red;
+    min-height: 400px;
+    padding-bottom: 30px;
+
+}
+.col2{
+    background-color: rgb(0, 255, 64);
+    height: 400px;
+}
+.col3{
+    background-color: rgb(51, 0, 255);
+    height: 400px;
+}
+.col4{
+    background-color: rgb(51, 0, 255);
+    height: 200px;
+}
+.col5{
+    background-color: rgb(255, 170, 0);
+    height: 200px;
+}
+.col7{
+    background-color: rgb(60, 255, 0);
+    height: 200px;
+}

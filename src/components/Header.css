@@ -1,0 +1,249 @@
+.Header {
+  padding-bottom: 70px;
+  width: 100%;
+  /* background-color: rgba(8, 17, 39); */
+}
+
+.homebar-cont {
+  width: 100%;
+  height: min-content;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.homebar {
+  position: relative;
+  min-width: 720px;
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 50px;
+  border-radius: 15px;
+  background: transparent;
+}
+
+.homebar::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 2px;
+  background-image: linear-gradient(to right top, #4f7e9c, #4e7ba2, #5377a7, #5c73aa, #686dab, #5f72b2, #5477b8, #477cbd, #008cbe, #0098b5, #16a2a6, #4faa95); 
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+nav ul {
+  display: flex;
+  height: 100%;
+  list-style-type: none;
+  gap: 30px;
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
+}
+
+.homebar ul li {
+  color: white;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.homebar ul li:hover .li1 {
+  background-color: #698393;
+  transition: background-color 0.4s ease, transform 0.3s ease;
+  transform: scale(1.05);
+}
+
+.homebar-icons {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.li1 {
+  padding: 6px 12px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cont1 {
+  padding: 30px 37px;
+}
+
+.name-cont {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.hello {
+  font-size: 50px;
+  font-weight: 700;
+  background: linear-gradient(to bottom, #ba4d3d, #bc3e46, #bb2e52, #b71f5f, #af116e, #a33090, #8c49ae, #675ec6, #0081df, #009ee3, #00b5d7, #18c9c6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+}
+
+.learning {
+  border: 2px solid darkslateblue;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 15px;
+  width: fit-content;
+  transition: 0.4s ease;
+}
+
+.learning:hover {
+  background-color: darkslateblue;
+  color: #fff;
+}
+
+.learning2 {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+}
+
+.but1 {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 15px 35px;
+  color: white;
+  background-color: #081127;
+  font-weight: 600;
+  transition: 0.4s ease;
+}
+
+.but1:hover {
+  background-color: slategray;
+  box-shadow: 0px 0px 8px skyblue;
+  transform: scale(1.08);
+}
+
+.profile-cont {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.card {
+  width: 100%;
+  background-color: #011522;
+  border-radius: 24px !important;
+  z-index: 1;
+  --bs-card-border-color: #011522 !important;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+  background-color: #0a2338;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  gap: 20px;
+}
+
+.circle-cont {
+  display: flex;
+  gap: 5px;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.developer {
+  color: grey;
+  font-size: 14px;
+}
+
+.box {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: #ff605c;
+}
+
+.yellow {
+  background-color: #ffbd44;
+}
+
+.green {
+  background-color: #00ca4e;
+}
+
+.card__content {
+  padding: 20px 30px 25px 30px;
+  background-image: linear-gradient(to right top, #040d42, #0d204d, #1d3157, #30435f, #455466);
+  color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.About-code-r,
+.About-code-r1 {
+  width: 100%;
+  line-height: 1.5;
+  word-spacing: 3px;
+}
+
+.About-code-r1 {
+  padding-left: 30px;
+}
+
+
+@media (max-width: 991px) {
+  .hello {
+    font-size: 32px;
+  }
+
+  .learning {
+    width: 100%;
+    text-align: center;
+  }
+
+  .name-cont {
+    margin-bottom: 60px;
+  }
+
+  .but1 {
+    width: 120px;
+    height: 50px;
+    padding: 0;
+  }
+
+  .homebar {
+    min-width: 90%;
+  }
+
+  nav ul {
+    gap: 15px;
+    font-size: 15px;
+  }
+}
