@@ -146,12 +146,34 @@ nav ul {
 }
 
 .card {
+  position: relative;
   width: 100%;
   background-color: #011522;
   border-radius: 24px !important;
   z-index: 1;
   --bs-card-border-color: #011522 !important;
+  overflow: hidden; /* important */
 }
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+  padding: 2px;
+  background-image: linear-gradient(
+    to right top, 
+    #4f7e9c, #4e7ba2, #5377a7, #5c73aa, #686dab,
+    #5f72b2, #5477b8, #477cbd, #008cbe, #0098b5, 
+    #16a2a6, #4faa95
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
 
 .tools {
   display: flex;
@@ -200,7 +222,8 @@ nav ul {
 
 .card__content {
   padding: 20px 30px 25px 30px;
-  background-image: linear-gradient(to right top, #040d42, #0d204d, #1d3157, #30435f, #455466);
+  /* background-image: linear-gradient(to right top, #040d42, #0d204d, #1d3157, #30435f, #455466); */
+  background-color: #081127;
   color: white;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -220,16 +243,17 @@ nav ul {
 
 @media (max-width: 991px) {
   .hello {
-    font-size: 32px;
+    font-size: 42px;
   }
 
   .learning {
-    width: 100%;
+    width: 40%;
     text-align: center;
   }
 
   .name-cont {
     margin-bottom: 60px;
+    padding-top: 0px;
   }
 
   .but1 {
@@ -239,11 +263,16 @@ nav ul {
   }
 
   .homebar {
-    min-width: 90%;
+    min-width: 360px;
   }
 
-  nav ul {
-    gap: 15px;
-    font-size: 15px;
+  .homebar-cont{
+    display: none;
+  }
+  .cont1{
+    padding:  0px 0px 0px 30px;
+  }
+  .Header{
+    padding-bottom: 0px;
   }
 }
