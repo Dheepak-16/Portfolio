@@ -1,5 +1,5 @@
 .Header {
-  padding-bottom: 70px;
+  padding-bottom: 0px;
   width: 100%;
   /* background-color: rgba(8, 17, 39); */
 }
@@ -10,6 +10,8 @@
   display: flex;
   justify-content: center;
   padding-top: 20px;
+  /* position: fixed;
+  z-index: 10; */
 }
 
 .homebar {
@@ -20,6 +22,10 @@
   height: 50px;
   border-radius: 15px;
   background: transparent;
+  z-index: 1;
+}
+.homebar ul a{
+  text-decoration: none;
 }
 
 .homebar::before {
@@ -28,7 +34,7 @@
   inset: 0;
   border-radius: 20px;
   padding: 2px;
-  background-image: linear-gradient(to right top, #4f7e9c, #4e7ba2, #5377a7, #5c73aa, #686dab, #5f72b2, #5477b8, #477cbd, #008cbe, #0098b5, #16a2a6, #4faa95); 
+  background-image: linear-gradient(to right top, #4f7e9c, #4e7ba2, #5377a7, #5c73aa, #686dab, #5f72b2, #5477b8, #477cbd, #008cbe, #0098b5, #16a2a6, #4faa95);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -53,6 +59,7 @@ nav ul {
   display: flex;
   align-items: center;
   transition: 0.3s ease;
+  z-index: 1;
 }
 
 .homebar ul li:hover .li1 {
@@ -92,6 +99,7 @@ nav ul {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1.2;
+  z-index: 1;
 }
 
 .learning {
@@ -103,6 +111,7 @@ nav ul {
   border-radius: 15px;
   width: fit-content;
   transition: 0.4s ease;
+  z-index: 1;
 }
 
 .learning:hover {
@@ -114,12 +123,14 @@ nav ul {
   color: white;
   font-size: 20px;
   font-weight: 400;
+  z-index: 1;
 }
 
 .buttons {
   display: flex;
   gap: 20px;
   padding: 15px;
+  z-index: 1;
 }
 
 .but1 {
@@ -152,7 +163,12 @@ nav ul {
   border-radius: 24px !important;
   z-index: 1;
   --bs-card-border-color: #011522 !important;
-  overflow: hidden; /* important */
+  overflow: hidden;
+  /* important */
+}
+.card:hover{
+  transition: 0.5s;
+  box-shadow: 0 0 20px #07747e;
 }
 
 .card::before {
@@ -161,12 +177,10 @@ nav ul {
   inset: 0;
   border-radius: 24px;
   padding: 2px;
-  background-image: linear-gradient(
-    to right top, 
-    #4f7e9c, #4e7ba2, #5377a7, #5c73aa, #686dab,
-    #5f72b2, #5477b8, #477cbd, #008cbe, #0098b5, 
-    #16a2a6, #4faa95
-  );
+  background-image: linear-gradient(to right top,
+      #4f7e9c, #4e7ba2, #5377a7, #5c73aa, #686dab,
+      #5f72b2, #5477b8, #477cbd, #008cbe, #0098b5,
+      #16a2a6, #4faa95);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -247,8 +261,12 @@ nav ul {
   }
 
   .learning {
-    width: 40%;
+    width: 50%;
     text-align: center;
+  }
+
+  .learning span {
+    font-size: 25px;
   }
 
   .name-cont {
@@ -257,7 +275,7 @@ nav ul {
   }
 
   .but1 {
-    width: 120px;
+    width: 130px;
     height: 50px;
     padding: 0;
   }
@@ -266,13 +284,20 @@ nav ul {
     min-width: 360px;
   }
 
-  .homebar-cont{
+  .homebar-cont {
     display: none;
   }
-  .cont1{
-    padding:  0px 0px 0px 30px;
+
+  .cont1 {
+    padding: 0px 0px 0px 30px;
   }
-  .Header{
+
+  .Header {
     padding-bottom: 0px;
+  }
+
+  .profile-cont {
+    height: 100%;
+    width: 90%;
   }
 }

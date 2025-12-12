@@ -1,0 +1,41 @@
+.experience-cont{
+    border: 2px solid white;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+.experience-cont1{
+    border: 2px solid greenyellow;
+    width: 100%;
+    text-align: center;
+}
+.head{
+    color: #369FE3;
+}
+.exp-card{
+    border: 2px solid white;
+    width: 100%;
+    display: flex;
+}
+.exp-card1{
+    border: 2px solid red;
+    width: 40%;
+}
+.role{
+    color: white;
+}
+.company{
+    color: white;
+}
+.role-desc{
+    color: white;
+}
+.exp-card2{
+    border: 2px solid yellow;
+    width: 20%;
+    
+}
+.exp-card3{
+    border: 2px solid orange;
+    width: 40%;
+}

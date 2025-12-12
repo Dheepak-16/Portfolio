@@ -1,0 +1,102 @@
+.education-container {
+    /* border: 2px solid white; */
+    padding: 40px;
+    color: white;
+    text-align: center;
+    
+}
+
+.edu-card {
+    /* border: 2px solid white; */
+    text-align: left;
+    background: #0b1220;
+    border-radius: 14px;
+    padding: 25px;
+    margin-top: 20px;
+    border: 1px solid #1f2a3a;
+    position: relative;
+    z-index: 1;
+    /* display: flex;
+    flex-direction: column;
+    gap: 10px; */
+}
+
+.edu-card-title {
+    /* border: 2px solid red; */
+    width: 100%;
+}
+
+.education-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #3bc9db;
+}
+
+.education-subtitle {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.edu-card-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #58a6ff;
+}
+
+.edu-info {
+    /* border: 2px solid white; */
+    width: 100%;
+}
+
+.edu-info p {
+    margin: 0;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.edu-description {
+    /* border: 2px solid yellow; */
+    width: 100%;
+    margin-top: 15px;
+    font-size: 15px;
+    color: #b8c2d1;
+    border-left: 3px solid #3bc9db;
+    padding-left: 12px;
+}
+
+.achievement-title {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.achievement-tags {
+    /* border: 2px solid orange; */
+    width: 100%;
+}
+
+.achievement-tags .tag {
+    display: inline-block;
+    background: #13324a;
+    padding: 6px 14px;
+    margin: 4px;
+    border-radius: 30px;
+    color: #7dd3fc;
+    font-size: 14px;
+}
+
+.subject-list {
+    /* border: 2px solid red; */
+    width: 100%;
+}
+
+.subject-list span {
+    /* border: 2px solid white; */
+    background: #1c2535;
+    padding: 6px 12px;
+    margin: 5px;
+    border-radius: 8px;
+    display: inline-block;
+    color: #cbd5e1;
+    font-size: 13px;
+}

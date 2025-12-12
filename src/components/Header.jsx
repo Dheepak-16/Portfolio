@@ -1,11 +1,10 @@
-import React from 'react';
-import './Header.css';
-import { IoHome } from "react-icons/io5";
-import { FaAlignLeft } from "react-icons/fa";
-import { MdWork } from "react-icons/md";
-import { IoMdSchool, IoMdContact } from "react-icons/io";
-import { FaComputer } from "react-icons/fa6";
 import { Col, Row } from 'react-bootstrap';
+import { FaAlignLeft } from "react-icons/fa";
+import { FaComputer } from "react-icons/fa6";
+import { IoMdContact, IoMdSchool } from "react-icons/io";
+import { MdWork } from "react-icons/md";
+import { RxCode } from "react-icons/rx";
+import './Header.css';
 
 const Header = () => {
   return (
@@ -13,12 +12,27 @@ const Header = () => {
       <div className="homebar-cont">
         <nav className="homebar">
           <ul>
-            <li><div className="li1"><IoHome className="homebar-icons" /> Home</div></li>
-            <li><div className="li1"><FaAlignLeft className="homebar-icons" /> Skills</div></li>
-            <li><div className="li1"><MdWork className="homebar-icons" /> Experience</div></li>
-            <li><div className="li1"><IoMdSchool className="homebar-icons" /> Education</div></li>
-            <li><div className="li1"><FaComputer className="homebar-icons" /> Projects</div></li>
-            <li><div className="li1"><IoMdContact className="homebar-icons" /> Contact</div></li>
+            {/* <a href="">
+              <li><div className="li1"><IoHome className="homebar-icons" /> Home</div></li>
+            </a> */}
+            <a href="#aboutme">
+              <li><div className="li1"><FaAlignLeft className="homebar-icons" /> About Me</div></li>
+            </a>
+            <a href="#skills">
+              <li><div className="li1"><RxCode className="homebar-icons" style={{fontSize: "25px"}}/> Skills</div></li>
+            </a>
+            <a href="#education">
+              <li><div className="li1"><IoMdSchool className="homebar-icons" /> Education</div></li>
+            </a>
+            <a href="">
+              <li><div className="li1"><MdWork className="homebar-icons" /> Experience</div></li>
+            </a>
+            <a href="">
+              <li><div className="li1"><FaComputer className="homebar-icons" /> Projects</div></li>
+            </a>
+            <a href="">
+              <li><div className="li1"><IoMdContact className="homebar-icons" /> Contact</div></li>
+            </a>
           </ul>
         </nav>
       </div>

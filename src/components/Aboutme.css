@@ -1,7 +1,7 @@
-.aboutme {
+#aboutme {
   width: 100%;
   color: white;
-  padding: 40px 0;
+  padding: 0px 0px;
 }
 
 .myself {
@@ -29,13 +29,14 @@
   background: linear-gradient(to right top, #4f13c6, #be5c38, #9d404d, #6b3351, #392840);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  z-index: 1;
 }
 
 .myself2 {
   /* border: 2px solid yellow; */
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   margin-bottom: 30px;
 }
 
@@ -46,11 +47,12 @@
   border-radius: 15px;
   /* margin-left: 60px; */
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  z-index: 1;
 }
 
 .myself2 img:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px #f7c873;
+  box-shadow: 0 0 20px #da871b;
 }
 
 .myself3 {
@@ -61,12 +63,14 @@
   gap: 15px;
   line-height: 1.6;
   font-size: 18px;
+  z-index: 1;
 }
 
 .myself3-t1 {
   text-align: justify;
   border-left: 4px solid #8a4225;
   padding-left: 15px;
+  z-index: 1;
 }
 
 
@@ -84,3 +88,4 @@
     font-size: 16px;
   }
 }
+
