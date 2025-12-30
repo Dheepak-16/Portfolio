@@ -34,14 +34,15 @@
 
 .myself2 {
   /* border: 2px solid yellow; */
+  width: 95%;
   display: flex;
-  justify-content: center;
-  /* align-items: center; */
+  justify-content: end;
   margin-bottom: 30px;
 }
 
 .myself2 img {
   /* width: 300px; */
+  /* border: 2px solid red; */
   height: 350px;
   object-fit: cover;
   border-radius: 15px;

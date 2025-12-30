@@ -19,18 +19,18 @@ const Header = () => {
               <li><div className="li1"><FaAlignLeft className="homebar-icons" /> About Me</div></li>
             </a>
             <a href="#skills">
-              <li><div className="li1"><RxCode className="homebar-icons" style={{fontSize: "25px"}}/> Skills</div></li>
+              <li><div className="li1"><RxCode className="homebar-icons" style={{ fontSize: "25px" }} /> Skills</div></li>
             </a>
             <a href="#education">
               <li><div className="li1"><IoMdSchool className="homebar-icons" /> Education</div></li>
             </a>
-            <a href="">
+            <a href="#experience">
               <li><div className="li1"><MdWork className="homebar-icons" /> Experience</div></li>
             </a>
-            <a href="">
+            <a href="#project">
               <li><div className="li1"><FaComputer className="homebar-icons" /> Projects</div></li>
             </a>
-            <a href="">
+            <a href="#contact">
               <li><div className="li1"><IoMdContact className="homebar-icons" /> Contact</div></li>
             </a>
           </ul>
@@ -56,8 +56,16 @@ const Header = () => {
               </div>
 
               <div className="buttons">
-                <button className='but1'>Learn More</button>
-                <button className='but1'>Get Resume</button>
+                {/* <button className='but1' id=''>Learn More</button> */}
+                <button className="but1" onClick={() =>
+                    window.open(
+                      "https://drive.google.com/file/d/1hrmDadME29_OvYhcKg3XOARRoAyB__lr/view?usp=drive_link",
+                      "_blank"
+                    )
+                  }
+                >
+                  Get Resume
+                </button>
               </div>
             </div>
           </Col>
