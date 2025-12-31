@@ -10,13 +10,13 @@
 .experience-cont1 {
   /* border: 2px solid red; */
   text-align: center;
+  z-index: 10;
 }
 
 .head {
   color: #369fe3;
   font-size: 42px;
   font-weight: 700;
-  z-index: 10;
 }
 
 .experience-cont1-sub {
@@ -25,7 +25,13 @@
   flex-direction: column;
   gap: 80px;
 }
+.g-4{
+  z-index: 10;
+}
 
+.exp-card{
+  z-index: 10;
+}
 .exp-card1,
 .exp-card3 {
   /* border: 2px solid bisque; */
@@ -34,7 +40,6 @@
   padding: 20px;
   background: rgba(24, 35, 57, 0.4);
   transition: 0.5s;
-  z-index: 10;
 }
 
 .exp-card1:hover,
@@ -48,7 +53,6 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  z-index: 10;
 }
 
 .role-badge {
@@ -60,7 +64,6 @@
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 8px;
-  z-index: 10;
 }
 
 .company-badge {
@@ -72,7 +75,6 @@
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 10px;
-  z-index: 10;
 }
 
 .role-badge:hover,
@@ -92,7 +94,6 @@
   color: #e5e7eb;
   font-size: 14px;
   line-height: 24px;
-  z-index: 10;
 }
 
 .exp-card1:hover .role-desc,
@@ -118,12 +119,10 @@
   left: 50%;
   width: 4px;
   transform: translateX(-50%);
-  background: linear-gradient(
-    to bottom,
-    transparent,
-    #6366f1,
-    transparent
-  );
+  background: linear-gradient(to bottom,
+      transparent,
+      #6366f1,
+      transparent);
   z-index: 0;
   animation: pulseLine 2s infinite ease-in-out;
 }
@@ -166,7 +165,15 @@
 }
 
 @keyframes pulseLine {
-  0% { opacity: 0.4; }
-  50% { opacity: 1; }
-  100% { opacity: 0.4; }
+  0% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.4;
+  }
 }
