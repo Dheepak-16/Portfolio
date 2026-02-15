@@ -2,7 +2,7 @@ import React from 'react';
 import './Aboutme.css';
 import { Col, Row } from 'react-bootstrap';
 import img1 from '../assets/img1.jpg';
-import img from '../assets/img.png';
+// import img from '../assets/img.png';
 
 const Aboutme = () => {
   return (
