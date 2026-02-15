@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Aboutme from './components/Aboutme';
 import Particles from './components/Particles';
 import Skills from './components/Skills';
-import Button from './components/Button';
+// import Button from './components/Button';
 import Education from './components/Education';
 import Experience from './components/Experience';
 import Project from './components/Project';
