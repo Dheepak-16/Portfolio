@@ -27,7 +27,7 @@ const Project = () => {
                 <span>IOT Hardwares</span>
               </div>
 
-              <a href="#" className="code-btn">🐙 Code</a>
+              <a href="" className="code-btn">🐙 Code</a>
             </div>
           </div>
         </Col>
@@ -49,7 +49,7 @@ const Project = () => {
                 {/* <span>React Icons</span> */}
               </div>
 
-              <a href="#" className="code-btn">🐙 Code</a>
+              <a href="https://github.com/Dheepak-16/Grabit" target="_blank" className="code-btn">🐙 Code</a>
             </div>
           </div>
         </Col>
@@ -72,7 +72,7 @@ const Project = () => {
                 <span>MySQL</span>
               </div>
 
-              <a href="#" className="code-btn">🐙 Code</a>
+              <a href="https://github.com/Dheepak-16/PlanetShopify" target="_blank" className="code-btn">🐙 Code</a>
             </div>
           </div>
         </Col>
