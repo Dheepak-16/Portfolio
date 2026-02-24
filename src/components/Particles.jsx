@@ -107,13 +107,13 @@ const Particles = ({
 
     for (let i = 0; i < count; i++) {
       let x, y, z, len;
-      do { x = Math.random()*2-1; y = Math.random()*2-1; z = Math.random()*2-1; len = x*x+y*y+z*z; }
+      do { x = Math.random() * 2 - 1; y = Math.random() * 2 - 1; z = Math.random() * 2 - 1; len = x * x + y * y + z * z; }
       while (len > 1 || len === 0);
       const r = Math.cbrt(Math.random());
-      positions.set([x*r, y*r, z*r], i*3);
-      randoms.set([Math.random(), Math.random(), Math.random(), Math.random()], i*4);
-      const col = hexToRgb(palette[Math.floor(Math.random()*palette.length)]);
-      colors.set(col, i*3);
+      positions.set([x * r, y * r, z * r], i * 3);
+      randoms.set([Math.random(), Math.random(), Math.random(), Math.random()], i * 4);
+      const col = hexToRgb(palette[Math.floor(Math.random() * palette.length)]);
+      colors.set(col, i * 3);
     }
 
     const geometry = new Geometry(gl, {
@@ -169,7 +169,8 @@ const Particles = ({
   }, [
     particleCount, particleSpread, speed, moveParticlesOnHover,
     particleHoverFactor, alphaParticles, particleBaseSize,
-    sizeRandomness, cameraDistance, disableRotation
+    sizeRandomness, cameraDistance, disableRotation,
+    particleColors
   ]);
 
   return <div ref={containerRef} className="particles-container" />;
