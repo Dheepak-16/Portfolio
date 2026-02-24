@@ -27,7 +27,7 @@ const Project = () => {
                 <span>IOT Hardwares</span>
               </div>
 
-              <a href="#" className="code-btn">🐙 Code</a>
+              <a href="/" target="_blank" className="code-btn">🐙 Code</a>
             </div>
           </div>
         </Col>
